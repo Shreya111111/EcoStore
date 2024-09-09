@@ -1,0 +1,80 @@
+/* Make the form container responsive */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Form labels */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Form inputs */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Submit button */
+button {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #104e8b;
+}
+
+/* Result styling */
+h3 {
+    color: #2e8b57;
+    margin-top: 20px;
+}
+
+/* Make the content centered vertically */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 15px;
+        width: 95%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    input[type="number"] {
+        padding: 8px;
+    }
+}
